@@ -26,6 +26,9 @@ body {
 .display {
     background-color: #002b80;
 }
+.clear {
+    background-color: #008015;
+}
 .header {
     padding: 10px 15px 10px 15px;
     background-color: rgb(238, 255, 249);

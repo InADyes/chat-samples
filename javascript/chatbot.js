@@ -130,7 +130,7 @@ function buildLeaderboard(){
 
     leaderboard.empty();
 
-    for(var i = 0; i < 10; i++){
+    for(var i = 0; i < 100; i++){
         var viewerName = sortedData[i],
             template = $(outputTemplate);
 
@@ -140,4 +140,8 @@ function buildLeaderboard(){
 
         leaderboard.append(template);
     }
+}
+
+function clearLeaderboard(){
+    leaderboard.append();
 }

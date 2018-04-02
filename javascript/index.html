@@ -29,6 +29,7 @@ or in the "license" file accompanying this file. This file is distributed on an 
         <button class="connect btn">Connect to chat</button>
         <button class="disconnect btn">Disconnect from chat</button>
         <button class="display btn">Populate leaderboard</button>
+        <button class="clear btn">clear leaderboard</button>
     </div>
 
     <div id="leaderboard">
@@ -48,12 +49,15 @@ or in the "license" file accompanying this file. This file is distributed on an 
         $('.display').click(function(){
             buildLeaderboard();
         });
+        $('.clear').click(function(){
+            clearLeaderboard();
+        });
     });
 
     window.chatClient = new chatClient({
-        channel: '#CHANNELNAMEHERE',
-        username: 'USERNAMEHERE',
-        password: 'oauth:AUTHTOKENHERE',
+        channel: '#realkraftyy',
+        username: 'inadyes',
+        password: 'oauth:lyku6r5uffvuq7tml48g7n8jfd0xet',
     });
     </script>
 </body>
