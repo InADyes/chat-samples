@@ -29,7 +29,7 @@ or in the "license" file accompanying this file. This file is distributed on an 
         <button class="connect btn">Connect to chat</button>
         <button class="disconnect btn">Disconnect from chat</button>
         <button class="display btn">Populate leaderboard</button>
-        <button class="clear btn">clear leaderboard</button>
+        <button class="clear btn">show followers</button>
     </div>
 
     <div id="leaderboard">
@@ -49,8 +49,8 @@ or in the "license" file accompanying this file. This file is distributed on an 
         $('.display').click(function(){
             buildLeaderboard();
         });
-        $('.clear').click(function(){
-            clearLeaderboard();
+        $('.showfollowers').click(function(){
+            showfollowers();
         });
     });
 

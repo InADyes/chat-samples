@@ -142,6 +142,18 @@ function buildLeaderboard(){
     }
 }
 
-function clearLeaderboard(){
-    leaderboard.append();
+function showfollowers(){
+    $.get("https://api.twitch.tv/kraken/channels/iadyes/follows").done(splitefollower);
+}
+
+function splitefollower(data){
+    var $followers= $("#followers-display");
+    
+            $followers.children().remove();
+    
+            data.followers.forEach(function(follow) {
+                var $iframe = $('<iframe width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true">');
+                $iframe.src = follow.embed_url;
+                $followers.append($iframe);
+            });
 }
